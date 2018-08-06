@@ -1,0 +1,96 @@
+MatrixTransform {
+  UniqueID MatrixTransform_0
+  name "GridMatrixTransform"
+  nodeMask 0xffffffff
+  cullingActive TRUE
+  referenceFrame RELATIVE
+  Matrix {
+    1 0 0 0
+    0 1 0 0
+    0 0 1 0
+    0 0 0 1
+  }
+  num_children 1
+  Geode {
+    name "GridModel"
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    num_drawables 1
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        GL_LIGHTING OFF
+        LineWidth {
+          width 1
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 2
+      {
+        DrawArrays LINES 0 4
+        DrawArrays LINES 4 40
+      }
+      VertexArray Vec3Array 44
+      {
+        -1000 -1000 0
+        -1000 1000 0
+        -800 -1000 0
+        -800 1000 0
+        -600 -1000 0
+        -600 1000 0
+        -400 -1000 0
+        -400 1000 0
+        -200 -1000 0
+        -200 1000 0
+        0 -1000 0
+        0 1000 0
+        200 -1000 0
+        200 1000 0
+        400 -1000 0
+        400 1000 0
+        600 -1000 0
+        600 1000 0
+        800 -1000 0
+        800 1000 0
+        1000 -1000 0
+        1000 1000 0
+        -1000 -1000 0
+        1000 -1000 0
+        -1000 -800 0
+        1000 -800 0
+        -1000 -600 0
+        1000 -600 0
+        -1000 -400 0
+        1000 -400 0
+        -1000 -200 0
+        1000 -200 0
+        -1000 0 0
+        1000 0 0
+        -1000 200 0
+        1000 200 0
+        -1000 400 0
+        1000 400 0
+        -1000 600 0
+        1000 600 0
+        -1000 800 0
+        1000 800 0
+        -1000 1000 0
+        1000 1000 0
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        0 0 1
+      }
+      ColorBinding OVERALL
+      ColorArray Vec4Array 1
+      {
+        1 1 1 1
+      }
+    }
+  }
+}
